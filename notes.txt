@@ -1,0 +1,44 @@
+Virtual environment 
+
+virtual environment is the place to store all your required packages or libraries
+
+flask
+jinja
+
+
+
+Flask migration is used to update the database table inbetween 
+
+
+
+
+#flask db init 
+--> initialize the migrations folder 
+--> only used once
+
+
+
+
+
+
+
+user will come to login 
+
+if user exists :
+    if password match:
+        dashboard
+    else:
+        incorrect password message
+else:
+    signup:
+        if username that usrr has entered already exists:
+                dont allow to register
+        else:
+                register and go to login
+
+
+
+We need to make sure that we have a by default 1 admin inside the user table already whenever we 
+start the application
+
+we should have at least 1 user as is_admin = true 
