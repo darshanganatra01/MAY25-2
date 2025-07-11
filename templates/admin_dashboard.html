@@ -11,13 +11,17 @@
     <h3><u>Albums</u></h3>
     {% for album in jinjalbums %}
         <h4>{{album.album_name}}
-    {% endfor %}   
+        --<a href="/update_album/{{album.a_id}}">Edit</a>
+        ---<a href="/delete_album/{{album.a_id}}">Delete</a> </h4>
+    {% endfor %}
+         
+    <a href="/create_album"><h4>Create album</h4></a>
     <hr>
-    <h3><u>Songs</u></h3>
+     <h3><u>Songs</u></h3>
     {% for song in jinjasongs %}
-        <h4>{{song.song_name}} by {{song.singer_name}}------from the album {{song.albums.album_name}}</h4>
+        <h4>{{song.song_name}} by {{song.singer_name}}</h4>
     {% endfor %}   
+    <a href="/create_song"><h4>Create song</h4></a>
     <hr>
-    
 </body>
 </html>

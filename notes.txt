@@ -16,7 +16,11 @@ Flask migration is used to update the database table inbetween
 --> initialize the migrations folder 
 --> only used once
 
+#flask db migrate -m "what changes u did"
+--> migrate the chages of the database
 
+#flask db upgrade
+---> actually make the changes 
 
 
 

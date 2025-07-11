@@ -15,11 +15,12 @@
             </ul>
         {% endif %}
     {% endwith %}
-    <h1>Signup Page</h1>
-    <form method="post">
-        <input type="text" placeholder="Username" name="username" required>
-        <input type="password" placeholder="Password" name="password" required>
-        <input type="submit" value="Signup">
-    </form>
+    <h1>Create song</h1>
+    <form action="/create_song" method="post">
+        <input type="text" placeholder="Song Name" name="songname" required><br>
+        <input type="text" placeholder="Singer" name="singername" required><br>
+        <input type="text" placeholder="Albumid" name="albumid" required><br>
+        <input type="submit" value="Submit">
+    </for
 </body>
 </html>
